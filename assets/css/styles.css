@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #171100;
+    --text-color: #5f5b53;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -11,13 +16,25 @@ body {
     font-family: Poppins, sans-serif;
 }
 /* =================Common================ */
+.desc-common {
+    font-weight: 400;
+    font-size: var(--font-size, 1.8rem);
+    color: var(--text-color);
+    line-height: var(--line-height, 1.67);
+}
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 3);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 .btn {
     display: inline-block;
     text-align: center;
     line-height: 50px;
     border-radius: 999px;
     font-weight: 600;
-    background-color: #171100;
+    background-color: var(--primary-color);
     color: #ffffff;
     min-width: 118px;
 }
@@ -44,6 +61,7 @@ a {
     position: sticky;
     top: -28px;
     left: 0;
+    z-index: 999;
 }
 .header .body {
     display: flex;
@@ -65,13 +83,13 @@ a {
 .header .nav a {
     font-weight: 400;
     font-size: 1.6rem;
-    color: #5f5b53;
+    color: var(--text-color);
     padding: 8px 22px;
 }
 
 .header .nav a:hover,
 .header .nav .active a {
-    color: #171100;
+    color: var(--primary-color);
     text-shadow: 1px 0 currentColor;
 }
 
@@ -83,7 +101,7 @@ a {
     display: block;
     width: 12px;
     height: 2px;
-    background-color: #171100;
+    background-color: var(--primary-color);
     border-radius: 1px;
 }
 
@@ -93,4 +111,145 @@ a {
 
 .header .action .sign-up-btn {
     min-width: 144px;
+}
+
+/* =================Header================ */
+.hero {
+    background-color: #fffcf4;
+    padding: 50px 0;
+}
+
+.hero .hero-wrap {
+    display: flex;
+}
+
+.hero .hero-left {
+    position: relative;
+    width: 49%;
+}
+
+.hero .image {
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hero .hero-left-info {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 32px;
+    background-color: #ffffff;
+    box-shadow:
+        5px 5px 10px rgba(0, 0, 0, 0.2),
+        -5px -5px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 48px;
+    width: 270px;
+    border-radius: 12px;
+    right: 0;
+}
+
+.hero .hero-left-info .item-info {
+    display: flex;
+    align-items: center;
+}
+
+.hero .hero-left-info .b-icon {
+    width: 48px;
+    height: 48px;
+    background-color: var(--b-icon, #fff9e8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+.hero .item-info .course {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.hero .item-info .sub-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-top: 8px;
+}
+
+.hero .hero-right {
+    width: 51%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 108px;
+}
+
+.hero .hero-right .hero-right-block {
+    width: 470px;
+}
+
+.hero .hero-right .heading {
+    color: var(--primary-color);
+    font-family: Sen, sans-serif;
+    font-size: 5.5rem;
+    line-height: 1.17;
+}
+
+.hero .hero-right .desc {
+    margin-top: 25px;
+}
+
+.hero .hero-right .actions {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .hero-right .btn-see-courses {
+    min-width: 180px;
+    line-height: 64px;
+    background-color: #ffb900;
+}
+
+.hero .hero-right .ic-play {
+    margin-left: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow:
+        1px 3px 8px rgba(0, 0, 0, 0.1),
+        -1px -3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero .hero-right .text-watch {
+    margin-left: 15px;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.hero .hero-right .label {
+    margin-top: 58px;
+}
+
+.hero .hero-right .row-data {
+    margin-top: 24px;
+}
+
+.hero .hero-right .value {
+    font-family: Sen, sans-serif;
+    font-size: 4.4rem;
+}
+
+.hero .hero-right .value-text {
+    margin-left: 8px;
+    margin-right: 32px;
 }
