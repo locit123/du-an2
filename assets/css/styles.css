@@ -10,3 +10,87 @@ body {
     font-size: 1.6rem;
     font-family: Poppins, sans-serif;
 }
+/* =================Common================ */
+.btn {
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 999px;
+    font-weight: 600;
+    background-color: #171100;
+    color: #ffffff;
+    min-width: 118px;
+}
+.btn:hover {
+    opacity: 0.9;
+}
+a {
+    text-decoration: none;
+}
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =================Header================ */
+.header {
+    padding: 36px 0 8px;
+    background-color: #fffcf4;
+}
+
+.fixed {
+    position: sticky;
+    top: -28px;
+    left: 0;
+}
+.header .body {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav {
+    margin-left: auto;
+}
+
+.header .nav ul {
+    display: flex;
+}
+
+.header .nav li {
+    position: relative;
+}
+
+.header .nav a {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #5f5b53;
+    padding: 8px 22px;
+}
+
+.header .nav a:hover,
+.header .nav .active a {
+    color: #171100;
+    text-shadow: 1px 0 currentColor;
+}
+
+.header .nav .active::after {
+    position: absolute;
+    bottom: -6px;
+    left: 22px;
+    content: "";
+    display: block;
+    width: 12px;
+    height: 2px;
+    background-color: #171100;
+    border-radius: 1px;
+}
+
+.header .action {
+    margin-left: 46px;
+}
+
+.header .action .sign-up-btn {
+    min-width: 144px;
+}
