@@ -457,3 +457,52 @@ a {
     line-height: 1.5;
     color: #ffffff;
 }
+/* =================Learning Outcomes================ */
+.learning-outcomes {
+    margin-top: 98px;
+    padding: 100px;
+}
+
+.learning-outcomes .body {
+    display: flex;
+}
+
+.learning-outcomes .body-left {
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.learning-outcomes .body-left .image {
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.learning-outcomes .body-left .image:first-child {
+    margin-top: 35px;
+}
+
+.learning-outcomes .body-right {
+    width: 51%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.body-right-width {
+    width: 470px;
+}
+
+.learning-outcomes .body-right .desc {
+    margin-top: 12px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.learning-outcomes .body-right .btn {
+    margin-top: 25px;
+    min-width: 137px;
+    background-color: #ffb900;
+}
