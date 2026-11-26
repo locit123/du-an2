@@ -647,3 +647,67 @@ a {
 .our-blog .dots .dot {
     background-color: rgba(255, 185, 0, 1);
 }
+/* =================Footer================ */
+.footer {
+    padding-top: 60px;
+    background-color: rgba(46, 33, 0, 1);
+}
+
+.footer .rows {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 44px;
+    border-bottom: 1px solid rgba(89, 85, 75, 1);
+}
+
+.footer .rows .column:first-child {
+    width: 22%;
+}
+
+.footer .rows .column:last-child {
+    width: 20%;
+}
+
+.footer .rows .title {
+    border-bottom: 1px solid rgba(89, 85, 75, 1);
+    display: inline-block;
+    padding-right: 48px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.6rem;
+}
+
+.footer .copy-right,
+.footer .rows .desc {
+    margin-top: 35px;
+    font-size: 1.4rem;
+    color: rgba(191, 188, 178, 1);
+    line-height: 1.85;
+}
+
+.footer .rows .desc + .desc {
+    margin-top: 15px;
+}
+
+.footer .rows .socials {
+    margin-top: 15px;
+    display: flex;
+    gap: 16px;
+}
+
+.footer .rows ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .rows .address {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 600;
+}
+
+.footer .copy-right {
+    margin-top: 0;
+    text-align: center;
+    padding: 25px 0;
+}
