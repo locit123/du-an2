@@ -536,3 +536,107 @@ a {
     border-radius: 20px;
     object-fit: cover;
 }
+/* =================Our Blog================ */
+.our-blog {
+    background-color: #fffcf4;
+    margin-top: 200px;
+    padding: 106px 0 94px;
+}
+
+.our-blog .header-top .sub-title {
+    text-align: center;
+}
+
+.our-blog .header-top .desc {
+    width: 448px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    margin: 18px auto 0;
+    text-align: center;
+}
+
+.our-blog .rows {
+    margin-top: 60px;
+    display: flex;
+    gap: 30px;
+}
+
+.our-blog .rows .column {
+    flex: 1;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.our-blog .rows .info {
+    padding: 30px 20px;
+    border-radius: 0 0 16px 16px;
+}
+
+.our-blog .rows .thumb-nail {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.our-blog .rows .label {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: #5f5b53;
+    padding: 0 27px 20px 10px;
+    position: relative;
+    border-bottom: 2px solid #e2dfda;
+}
+
+.our-blog .rows .label::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #ffb900;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+.our-blog .rows .desc {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: var(--primary-color);
+}
+
+.our-blog .rows .btn {
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+
+/* hover */
+.our-blog .rows .column:hover .btn {
+    background-color: rgba(255, 185, 0, 1);
+}
+.our-blog .rows .column:hover .info {
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.05);
+}
+
+.our-blog .dots {
+    margin-top: 36px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+.our-blog .dots .dot,
+.our-blog .dots .dot:not(.active) {
+    background-color: rgba(95, 91, 83, 1);
+    cursor: pointer;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+}
+
+.our-blog .dots .dot {
+    background-color: rgba(255, 185, 0, 1);
+}
