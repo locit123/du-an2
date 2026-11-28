@@ -35,6 +35,18 @@ body {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+.line-clamp.line-1 {
+    --line-clamp: 1;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.word-break-all {
+    word-break: break-all;
+}
 .btn {
     font-size: 1.6rem;
     display: inline-block;
@@ -349,9 +361,11 @@ a {
 }
 
 .popular .popular-info .sub-title {
+    padding-right: 4px;
     color: var(--primary-color);
     font-weight: 600;
     font-size: 1.8rem;
+    line-height: 1.67;
 }
 
 .popular .popular-info .star {
